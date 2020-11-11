@@ -4,7 +4,8 @@
   <%= f.input :content %>
   <%= f.input :rating, collection: 0..5 %>
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, class: "btn btn-success" %>
+     <td><%= link_to 'back to restaurant', @restaurant, class: "btn btn-danger" %></td>
   </div>
   <% end %>
 </div>
