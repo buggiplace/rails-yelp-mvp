@@ -1,5 +1,19 @@
 <!-- <h1>Restaurants#index</h1>
 <p>Find me in app/views/restaurants/index.html.erb</p> -->
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Index</li>
+  </ol>
+</nav>
+<div class="jumbotron" style="background-color: lightblue">
+  <h1 class="display-4">Hello, foodlovers!</h1>
+  <p class="lead">Find the hottest restos in town in the simple but almost perfect app.</p>
+  <hr class="my-4">
+  <p>We use secret kick-ass algorithms to find the best of the best.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#notice" role="button">See restos</a>
+  </p>
+</div>
 
 <div class="container mt-5 mb-5">
   <p id="notice"><%= notice %></p>
@@ -33,5 +47,10 @@
   <br>
   <%#= link_to 'See our top rated restaurants', top_restaurants_path %>
   <br>
-  <%= link_to 'New Restaurant', new_restaurant_path, class: "btn btn-success" %>
+  <ul class="list-inline">
+  <li class="list-inline-item"> <%= link_to 'New Restaurant', new_restaurant_path, class: "btn btn-success" %></li>
+  <li class="list-inline-item btn btn-warning"><a href="https://www.deliveroo.co.uk/">Fxxx this - I am going somewhere else</a></li>
+</ul>
 </div>
+
+

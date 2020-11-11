@@ -1,3 +1,11 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="">Index</a></li>
+    <li class="breadcrumb-item"><a href="">Show</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Add review</li>
+  </ol>
+</nav>
+
 <div class="container mt-5">
   <h1>Add a review for <%= @restaurant.name %></h1>
   <%= simple_form_for [@restaurant, @review] do |f| %>
@@ -5,9 +13,9 @@
   <%= f.input :rating, collection: 0..5 %>
   <div class="form-actions">
     <%= f.button :submit, class: "btn btn-success" %>
-     <td><%= link_to 'back to restaurant', @restaurant, class: "btn btn-danger" %></td>
+    <td><%= link_to 'back to restaurant', @restaurant, class: "btn btn-danger" %></td>
+    <%= link_to 'Back to index', restaurants_path, class: "btn btn-primary"%>
   </div>
   <% end %>
 </div>
-
 
